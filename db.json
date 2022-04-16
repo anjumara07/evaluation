@@ -1,0 +1,117 @@
+{
+  "city": [
+    {
+      "id": 1,
+      "country": "Kenya",
+      "city": "Moyale",
+      "population": "9645350832"
+    },
+    {
+      "id": 2,
+      "country": "Ukraine",
+      "city": "Karapyshi",
+      "population": "1781987289"
+    },
+    {
+      "id": 3,
+      "country": "Brazil",
+      "city": "Olímpia",
+      "population": "2390589316"
+    },
+    {
+      "id": 4,
+      "country": "China",
+      "city": "Wengtian",
+      "population": "2850359823"
+    },
+    {
+      "id": 5,
+      "country": "Philippines",
+      "city": "Union",
+      "population": "1895310490"
+    },
+    {
+      "id": 6,
+      "country": "Indonesia",
+      "city": "Passo",
+      "population": "8674129072"
+    },
+    {
+      "id": 7,
+      "country": "Tajikistan",
+      "city": "Obikiik",
+      "population": "7474302608"
+    },
+    {
+      "id": 8,
+      "country": "Kenya",
+      "city": "Moyale",
+      "population": "9645350832"
+    },
+    {
+      "id": 9,
+      "country": "Ukraine",
+      "city": "Karapyshi",
+      "population": "1781987289"
+    },
+    {
+      "id": 10,
+      "country": "Brazil",
+      "city": "Olímpia",
+      "population": "2390589316"
+    },
+    {
+      "city": "aa",
+      "population": "364326324",
+      "country": "india",
+      "id": 11
+    }
+  ],
+  "country": [
+    {
+      "id": 1,
+      "country": "Kenya"
+    },
+    {
+      "id": 2,
+      "country": "Ukraine"
+    },
+    {
+      "id": 3,
+      "country": "Brazil",
+      "city": "Olímpia"
+    },
+    {
+      "id": 4,
+      "country": "China"
+    },
+    {
+      "id": 5,
+      "country": "Philippines"
+    },
+    {
+      "id": 6,
+      "country": "Indonesia"
+    },
+    {
+      "id": 7,
+      "country": "Tajikistan"
+    },
+    {
+      "id": 8,
+      "country": "Kenya"
+    },
+    {
+      "id": 9,
+      "country": "Ukraine"
+    },
+    {
+      "id": 10,
+      "country": "Brazil"
+    },
+    {
+      "country": "india",
+      "id": 11
+    }
+  ]
+}
