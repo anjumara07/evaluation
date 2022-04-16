@@ -13,7 +13,7 @@ export const TableRow =({rowdata})=>{
                 <td>{rowdata.city}</td>
                 <td>{rowdata.population}</td>
                 <td><button>Edit</button></td>
-                <td><button onclick={()=>{handleDelete(rowdata.id)}} >Delete</button></td>
+                <td><button style={{color: 'white' , backgroundColor:'red'}} onclick={()=>{handleDelete(rowdata.id)}} >Delete</button></td>
             </tr>
         
         </>

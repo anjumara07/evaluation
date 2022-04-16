@@ -19,12 +19,6 @@
       "population": "2390589316"
     },
     {
-      "id": 4,
-      "country": "China",
-      "city": "Wengtian",
-      "population": "2850359823"
-    },
-    {
       "id": 5,
       "country": "Philippines",
       "city": "Union",
@@ -65,6 +59,12 @@
       "population": "364326324",
       "country": "india",
       "id": 11
+    },
+    {
+      "city": "abb",
+      "population": "53264573254",
+      "country": "Philippines",
+      "id": 12
     }
   ],
   "country": [
@@ -112,6 +112,10 @@
     {
       "country": "india",
       "id": 11
+    },
+    {
+      "country": "abcd",
+      "id": 12
     }
   ]
 }

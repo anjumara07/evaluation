@@ -41,11 +41,15 @@ export const Table =()=>{
 
     return (
         <>
-          <input type="text" onChange={filter} />
-          <button onClick={() =>{filter()}} >Filter by Country</button>
-          <button onClick={() =>{sorting('asc')}}>Sort Asc</button>
-          <button onClick={() =>{sorting('desc')}}>Sort Desc</button>
-          <table style={{border : '1px solid black' , margin : '50px'}}>
+          <div style={{margin: 'auto' , width:'700px' , display: 'flex' ,justifyContent:'space-around' , marginBottom:'30px'}}>
+                <div>
+                    <input style={{borderRadius:'5px', padding: '10px'}} placeholder="Search here..." type="text" onChange={filter} />
+                <button style={{color:'white',borderRadius:'5px', padding: '10px', backgroundColor:'blue'}}onClick={() =>{filter()}} >Filter by Country</button>
+                </div>
+                <button style={{color:'white',borderRadius:'5px', padding: '10px', backgroundColor:'blue'}} onClick={() =>{sorting('asc')}}>Sort Asc</button>
+                <button style={{color:'white',borderRadius:'5px', padding: '10px', backgroundColor:'blue'}} onClick={() =>{sorting('desc')}}>Sort Desc</button>
+          </div>
+          <table style={{border : '1px solid black' , margin : 'auto'}}>
               <thead>
                   <tr>
                       <th>id</th>

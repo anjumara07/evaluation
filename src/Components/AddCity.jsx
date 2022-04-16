@@ -33,17 +33,17 @@ export const AddCity = () => {
     },[])
 
     return (
-        <div>
-            <input type="text" placeholder="name" onChange={(e) => {setCity(e.target.value)}}/>
-            <input type="text" placeholder="population" onChange={(e) => {setPopulation(e.target.value)}}/>
-            <select onChange={(e) => {setCountry(e.target.value)}}>
+        <div style={{margin: 'auto' , width:'700px'}}>
+            <input style={{borderRadius:'5px', padding: '10px'}} type="text" placeholder="name" onChange={(e) => {setCity(e.target.value)}}/>
+            <input style={{borderRadius:'5px', padding: '10px'}} type="text" placeholder="population" onChange={(e) => {setPopulation(e.target.value)}}/>
+            <select style={{borderRadius:'5px', padding: '10px'}} onChange={(e) => {setCountry(e.target.value)}}>
                 {
                   countryData.map((e)=>{
                     return <option key={e.id}>{e.country}</option>
                   })
                 }
             </select>
-            <button onClick={handleSubmit}>submit</button>
+            <button style={{color:'white',borderRadius:'5px', padding: '10px', backgroundColor:'blue'}} onClick={handleSubmit}>submit</button>
         </div>
     )
 }
