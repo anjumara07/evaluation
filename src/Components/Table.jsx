@@ -30,8 +30,11 @@ export const Table =()=>{
         let ans = row.filter((el)=>{
              return el.country === e.target.value ;
         })
-        console.log(ans)
-        // setRow([...ans])
+        axios.get(`http://localhost:8080/city/${ans}`).then((res)=>{
+           setRow([...res.data]);
+        })
+        // console.log(ans)
+        setRow([...ans])
     }
 
     const handleDelete = (id) =>{
