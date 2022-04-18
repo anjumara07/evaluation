@@ -11,7 +11,7 @@ export const AddCountry = () => {
     }
 
     const handleSubmit = () => {
-        axios.post("http://localhost:8080/country", data).then((res) => {
+        axios.post("https://json-server-065.herokuapp.com/country", data).then((res) => {
             setAddCountry(res.data)
         })
     }

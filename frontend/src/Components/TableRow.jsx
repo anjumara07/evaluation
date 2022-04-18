@@ -1,7 +1,7 @@
 import axios from 'axios';
 export const TableRow =({rowdata})=>{
     const handleDelete = (id) =>{
-        axios.delete(`http://localhost:8080/data${id}`).then((res)=>{        
+        axios.delete(`https://json-server-065.herokuapp.com/${id}`).then((res)=>{        
         });
     }
     

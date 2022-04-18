@@ -16,13 +16,13 @@ export const AddCity = () => {
     }
 
     const handleSubmit = () => {
-        axios.post("http://localhost:8080/city", data).then((res) => {
+        axios.post("https://json-server-065.herokuapp.com/city", data).then((res) => {
             setCity(res.data)
         })
     }
 
     let getData = () =>{
-        axios.get("http://localhost:8080/country").then((res)=>{
+        axios.get("https://json-server-065.herokuapp.com/country").then((res)=>{
         //    console.log(res.data)
            setCountryData(res.data)
         })

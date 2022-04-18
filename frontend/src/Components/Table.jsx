@@ -10,7 +10,7 @@ export const Table =()=>{
     },[])
 
     const getResponse = ()=>{
-        axios.get('http://localhost:8080/city').then((res)=>{
+        axios.get('https://json-server-065.herokuapp.com/city').then((res)=>{
            setRow([...res.data]);
         })
     }
@@ -30,7 +30,7 @@ export const Table =()=>{
         let ans = row.filter((el)=>{
              return el.country === e.target.value ;
         })
-        axios.get(`http://localhost:8080/city/${ans}`).then((res)=>{
+        axios.get(`https://json-server-065.herokuapp.com/${ans}`).then((res)=>{
            setRow([...res.data]);
         })
         // console.log(ans)
@@ -38,7 +38,7 @@ export const Table =()=>{
     }
 
     const handleDelete = (id) =>{
-        axios.delete(`http://localhost:8080/city/${id}`)
+        axios.delete(`https://json-server-065.herokuapp.com/${id}`)
         getResponse();
     }
 
