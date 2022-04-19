@@ -26,15 +26,18 @@ export const Table =()=>{
         }
     }
 
-    const filter = (e) =>{
+     const filter = (e) =>{
         let ans = row.filter((el)=>{
-             return el.country === e.target.value ;
+             return el.country.includes(e.target.value);
         })
-        axios.get(`https://json-server-065.herokuapp.com/${ans}`).then((res)=>{
-           setRow([...res.data]);
-        })
-        // console.log(ans)
-        setRow([...ans])
+
+        if(ans){
+           setRow([...ans])
+        }
+        if(e.target.value===""){
+            getResponse()
+        }
+        
     }
 
     const handleDelete = (id) =>{
